@@ -1,27 +1,56 @@
-/*
-This is your site JavaScript code - you can add interactivity and carry out processing
-- Initially the JS writes a message to the console, and moves a button you can add from the README
-*/
+const button = document.querySelector("#myButton");
 
-// Print a message in the browser's dev tools console each time the page loads
-// Use your menus or right-click / control-click and choose "Inspect" > "Console"
-console.log("Hello 🌎");
+button.addEventListener("click", function(){
+    document.querySelector("#myAudio").play();
+})
 
-/* 
-Make the "Click me!" button move when the visitor clicks it:
-- First add the button to the page by following the "Next steps" in the README
-*/
-const btn = document.querySelector("button"); // Get the button from the page
-// Detect clicks on the button
-if (btn) {
-  btn.onclick = function() {
-    // The JS works in conjunction with the 'dipped' code in style.css
-    btn.classList.toggle("dipped");
-  };
+button.addEventListener("dblclick", function(){
+    document.querySelector("#myAudio").pause();
+})
+
+function vacationCountdown(){
+    const vacationDate=new Date("August 13,2022 00:00");
+    const now= new Date();
+    const diff= vacationDate-now;
+
+const msInSecond=1000;
+const msInMinute= 60*1000;
+const msInHour=60*60*1000;
+const msInDay=24*60*60*1000;
+
+const displayDay= Math.floor(diff/msInDay);
+document.querySelector(".days").textContent=displayDay;
+console.log(displayDay)
+
+
+const displayHour= Math.floor((diff%msInDay)/msInHour);
+document.querySelector(".hours").textContent= displayHour;
+
+const displayMinute= Math.floor((diff%msInHour)/msInMinute);
+document.querySelector(".minutes").textContent=displayMinute;
+
+const displaySecond= Math.floor((diff%msInMinute)/msInSecond);
+document.querySelector(".seconds").textContent= displaySecond;
+
+
+if(diff<=0){
+    document.querySelector(".days").textContent=0;
+    document.querySelector(".hours").textContent=0;
+    document.querySelector(".minutes").textContent=0;
+    document.querySelector(".seconds").textContent=0;
+    clearInterval(timerID);
+    vacationTime();
 }
 
-// This is a single line JS comment
-/*
-This is a comment that can span multiple lines 
-- use comments to make your own notes!
-*/
+}
+
+
+let timerID= setInterval(vacationCountdown, 1000);
+
+
+function vacationTime() {
+    const heading= document.querySelector("h1");
+    heading.textContent="It's time! Where is my bikini?";
+    heading.classList.add("headingChanged");
+
+}

@@ -15,3 +15,5 @@
 {"uuid":"yEDZsSX7I7P2NlF1","deleted":true}
 {"uuid":"VY2dLeOvcf8ffuEw","deleted":true}
 {"uuid":"XPQ2UUJettC9yQ6L","deleted":true}
+{"name":"vac1.jpg","date":"2022-07-07T14:42:32.348Z","url":"https://cdn.glitch.global/8bafe85c-520d-4576-84c9-31a67c39be5e/vac1.jpg","type":"image/jpeg","size":2000743,"imageWidth":6000,"imageHeight":4000,"thumbnail":"https://cdn.glitch.global/8bafe85c-520d-4576-84c9-31a67c39be5e/thumbnails%2Fvac1.jpg","thumbnailWidth":330,"thumbnailHeight":220,"uuid":"cvOrWMUAPGJObatY"}
+{"name":"song.mp3","date":"2022-07-07T14:48:12.256Z","url":"https://cdn.glitch.global/8bafe85c-520d-4576-84c9-31a67c39be5e/song.mp3","type":"audio/mpeg","size":4991268,"thumbnail":"https://cdn.glitch.global/8bafe85c-520d-4576-84c9-31a67c39be5e/thumbnails%2Fsong.mp3","thumbnailWidth":210,"thumbnailHeight":210,"uuid":"UhkZJNJaEsu1wBhm"}
