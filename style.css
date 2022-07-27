@@ -5,6 +5,7 @@ body{
     background-color: antiquewhite;
   background-position: center;
   min-height:100vh;
+  
 }
 
 .heading{
@@ -66,3 +67,4 @@ font-style: italic;
 .headingChanged{
 color: #FDFF8F;
 }
+

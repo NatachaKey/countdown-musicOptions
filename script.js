@@ -1,12 +1,22 @@
+
+
+
 const button = document.querySelector("#myButton");
+const myAudio=document.querySelector('#myAudio');
+
 
 button.addEventListener("click", function(){
-    document.querySelector("#myAudio").play();
+  
+  if(myAudio.paused){
+     document.querySelector("#myAudio").play(); 
+  }
+  else {
+      document.querySelector("#myAudio").pause();
+  }
+   
 })
 
-button.addEventListener("dblclick", function(){
-    document.querySelector("#myAudio").pause();
-})
+
 
 function vacationCountdown(){
     const vacationDate=new Date("August 13,2022 00:00");
