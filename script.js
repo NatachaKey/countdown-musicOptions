@@ -3,23 +3,37 @@
 
 const button = document.querySelector("#myButton");
 const myAudio=document.querySelector('#myAudio');
+const images =[
+"https://img.icons8.com/ios-filled/100/FFFFFF/play-button-circled--v1.png",
+"https://img.icons8.com/ios-filled/100/FFFFFF/pause--v1.png"
+]
 
+button.addEventListener("click", ()=>{
+    
 
-button.addEventListener("click", function(){
-  
-  if(myAudio.paused){
-     document.querySelector("#myAudio").play(); 
-  }
-  else {
-      document.querySelector("#myAudio").pause();
-  }
-   
+    if (audio.paused){
+        document.querySelector("#myAudio").play();
+        playMusic();
+}
+    else {
+        document.querySelector("#myAudio").pause();
+        stopMusic();
+}
 })
+
+function playMusic(){
+    document.querySelector("#myImage").src=images[1];
+}
+
+function stopMusic(){
+    document.querySelector("#myImage").src=images[0];
+}
+
 
 
 
 function vacationCountdown(){
-    const vacationDate=new Date("August 13,2022 00:00");
+    const vacationDate=new Date("August 13,2023 00:00");
     const now= new Date();
     const diff= vacationDate-now;
 
