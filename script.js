@@ -1,8 +1,10 @@
-
+gsap.from(".heading", {y:-300, delay:0.2, duration:3, opacity:0.5, ease:"power4.out"})
+gsap.from(".time", {y:600, delay:1.2, duration:3, opacity:0.5, ease:"power4.out"})
+gsap.from("#myButton", {x:-200, delay:3, duration:2, opacity:0, ease:"power4.out"})
 
 
 const button = document.querySelector("#myButton");
-const myAudio=document.querySelector('#myAudio');
+const audio=document.querySelector('#myAudio');
 const images =[
 "https://img.icons8.com/ios-filled/100/FFFFFF/play-button-circled--v1.png",
 "https://img.icons8.com/ios-filled/100/FFFFFF/pause--v1.png"
