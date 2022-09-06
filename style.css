@@ -70,7 +70,7 @@ color: #FDFF8F;
 
 @media all and (max-width:500px){
   body {
-    background-color: ##FFCC70 ;
+    background-color: #FFCC70 ;
 background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
 
   }
